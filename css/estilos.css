@@ -155,7 +155,7 @@ nav {
 
 
 .navega {
-	width: 80%;
+	width: 70%;
 	height: 100%;
 	float: left;
 }
@@ -169,7 +169,7 @@ nav {
 nav ul{
 	list-style: none;
 	text-align: right;
-	padding: 5px 80px;
+	padding: 5px 20px;
 }
 
 nav ul li{
@@ -198,7 +198,32 @@ nav ul li a:active, nav ul li a:focus {
 	color: #fff;
 }
 
+/*ingreso*/
+nav .ingreso{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	width: 150px;
+	height: 100%;
+	float: 	left;
+	text-align: center;
+	padding-top: 25px;
+}
 
+nav .ingreso a{
+	background: #48C9B0;
+	text-decoration: none;
+	color: black;
+	padding:10px; 
+	border-radius: 5px;
+}
+
+nav .ingreso a:hover{
+	background: white;
+	color: solid black;
+	border: solid black;
+
+}
 
 /* Encabezado */
 header{
@@ -623,6 +648,18 @@ footer{
 		background: none;
 	}
 
+	/*ingreso*/
+	nav .ingreso{
+		position: absolute;
+		top: 0px;
+		left: 40%;
+		padding-top: 16px;
+	}
+
+	nav .ingreso a{
+		padding:6px; 
+		border-radius: 5px;
+	}
 
 	/* Encabezado */
 	header{
