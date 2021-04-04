@@ -1,0 +1,306 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+/*estilos generales*/
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+body{
+
+}
+
+/* clases especiales */
+.borde{
+	border: 1px solid gray;
+
+}
+
+
+/*navegador*/
+nav {
+	width: 100%;
+	height: 9.4vh;
+}
+.logo{
+	width: 10%;
+	height: 100%;
+	float: left;
+	border-bottom: 2px solid black;
+}
+.logo1{
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	padding: 2px;
+
+}
+.logo2{
+	width: 50%;
+	height: 100%;
+	float: left;
+
+}
+
+.logo1 img{
+	width: auto;
+	height: 100%;
+
+
+}
+
+.logo2 h1{
+	text-align: left;
+	padding-top: 16px;
+
+
+}
+.navega{
+	width: 75%;
+	height: 100%;
+	float: left;
+	padding-right: 6px;
+
+}
+
+
+.navega-izq{
+	width: 25%;
+	height: 100%;
+	float: left;
+	padding: 6px;
+	font-size: 0.9em;
+	color: #fff;
+
+}	
+	
+.navega-dere{
+	width: 75%;
+	height: 100%;
+	float: left;
+
+
+}
+
+.ingreso{
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+
+
+/*nivel 0*/
+nav ul{
+	/*quitar los puntos*/
+	list-style: none;
+	/*alinear a la derecha*/
+	text-align: right;
+
+}
+
+nav ul li{
+	/*eleentos en bloque alineado*/
+	display: inline-block;
+	/*separacion de la lista*/
+	width: 130px;
+}
+
+
+nav ul li:hover ul{
+	display: block;
+}
+
+
+nav .navega ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 1.5em;
+	text-align: center;
+	border-bottom: 3px solid #fff;
+	padding: 15.5px 5px;
+	color:  #fff;
+
+}
+
+nav .ingreso ul li a{
+
+	display: block;
+	text-decoration: none;
+	font-size: 1.3em;
+	text-align: center;
+	border-bottom: 3px solid #fff;
+	padding: 17.5px 5px;
+	color: #FFFFFF;
+
+}
+nav .ingreso ul li {
+	width: 100%;
+}
+
+
+
+nav ul li a:hover{
+	border-bottom: 3px solid #BDCC31;
+	color: #BDCC31;
+}
+
+nav .ingreso ul li a:hover{
+	border-bottom: 3px solid black;
+	color: black;
+}
+/*nivel 1*/
+nav li ul{
+	position: absolute;
+	display: none;
+
+}
+
+nav .ingreso li ul{
+	width: 14.05%;
+}
+
+
+
+/*seccion principal*/
+section{
+	width: 100%;
+	height: 85vh;
+
+}
+
+/*menu*/
+.menu{
+	position: absolute;
+	top:0;
+	padding: 0;
+	left: 155px;
+	top: 41px;
+	font-size: 1.3em;
+	color: red;
+	cursor: pointer;
+}
+.checkbox{
+	display: none;
+
+}
+
+.checkbox:checked ~ aside{
+	visibility: hidden;
+	opacity: 0;
+	transition: all 500ms ease;
+	width: 0%;
+}
+.checkbox:checked ~ main{
+	transition: all 500ms ease;
+	width: 100%;
+} 
+/*contenedor*/
+.contenedor{
+	width: 95%;
+	/*altura ajustado acorde a la pantalla  vh*/
+	height: 100vh;
+	max-width: 1280px;
+	margin: auto;
+
+}
+
+.menu .fa-caret-down{
+	position: relative;
+	transform: rotate(90deg);
+}
+
+.checkbox:checked ~ .menu .fa-caret-down{
+	position: relative;
+	transform: rotate(-90deg);
+}
+
+/*panel lateral*/
+aside{
+	width: 10%;
+	height: 85vh;
+	float: left;
+	transition: 500ms ease;
+
+}
+
+.lateral-sup{
+	width: 100%;
+	height: 18%;
+	padding-top:20px;	
+ 
+
+}
+
+
+.lateral-inf{
+	width: 100%;
+	height: 18%;
+	padding-top:20px;	
+
+}
+
+aside ul li p{
+	font-size: 0.4em;
+}
+
+
+/*nivel 0*/
+aside ul {
+	list-style: none;
+	text-align: center;
+
+}
+
+aside ul li{
+	display: block;
+
+}
+
+aside ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 2.5em;
+	text-align: center;
+	border-left: 2px solid #000;
+	padding: 10px 10px;
+	color:  #fff;
+
+}
+
+aside ul li:hover a{
+	color: #BDCC31;
+	border-left: 10px solid #BDCC31;
+}
+
+/*Area de trabajo*/
+main{
+	width: 90%;
+	height: 85vh;
+	float: left;
+	transition: 500ms ease;
+}
+
+main iframe{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+
+/*pie de pagina*/
+footer{
+	color: #fff;
+	width: 100%;
+	height: 5.6vh;
+	font-size: 0.6em;
+	padding: 6px 8px;
+}
+
+footer p{
+
+text-align: right;
+}

@@ -1,0 +1,319 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+/*estilos generales*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*contenedor*/
+.contenedor{
+	width: 95%;
+	/*altura ajustado acorde a la pantalla  vh*/
+	height: 100vh;
+	max-width: 1280px;
+	margin: auto;
+
+}
+
+/* clases especiales */
+.borde{
+	border: 1px solid gray;
+
+}
+
+/*seccion fija*/
+
+.fija{
+	position: fixed;
+	width: 95%;
+	padding: 20px 0 0 0;
+	border-bottom: solid 1px rgba(245,125,119,0.5);
+	background: rgba(236,236,236);
+
+}
+
+/*migas de pan*/
+
+.migas-pan{
+	width: 99%;
+	margin: auto;
+	padding: 5px;
+	background: rgba(245,125,119,0.2);
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.migas-pan a{
+	text-decoration: none;
+	color: #002BFF;
+}
+
+
+.titulo{
+	width: 50%;
+	padding: 10px 0;
+	float: left;
+}
+
+/*controles*/
+.controles{
+	width: 50%;
+	text-align: right;
+	float: left;
+	padding: 12px;
+}
+
+.controles a{
+	width: 130px;
+	display: inline-block;
+	text-decoration: none;
+	background: #00B2FF;
+	font-size: 1.3em;
+	color: #fff;
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: center;
+	padding: 3px;
+}
+
+.controles #control-1:hover{
+	background: #6CDEDF;
+	border: 1px solid black;
+	color: black;
+}
+
+.controles #control-2:hover{
+	background: #6CDEDF;
+	border: 1px solid black;
+	color: black;
+}
+
+/*contenedor pagina*/
+
+.cont-pagina{
+	padding-top: 130px;
+	padding-bottom: 30px;
+
+}
+
+.modulos-generales{
+	width: 100%;
+	height: 100vh;
+}
+
+/*modulos generales-extenciones de modulos*/
+.div-mod{
+	width: 33.33%;
+	height:50vh;
+	float:left;
+
+}
+
+.div-mod h1{
+	text-align: center;
+	font-size: 1.5em;
+	padding: 12px 0;
+	
+
+}
+
+.text-modulo{
+	width: 90%;
+	height: 100px;
+	margin: auto;
+	border-bottom: 3px solid blue;
+	border-radius: 5px;
+	padding: 10px;
+
+}
+
+.text-modulo p{
+	text-align: justify;
+}
+
+.div-mod:hover .text-modulo{
+	border-bottom: 3px solid green;
+}
+
+.div-mod:hover{
+	background: rgba(0,0,0,0.1);
+}
+
+/*nivel 0*/
+.modulos-generales ul {
+	list-style: none;
+	text-align: center;
+	margin-bottom: 15px;
+
+}
+
+.modulos-generales ul li{
+	display: block;
+}
+
+.modulos-generales ul li a{
+	font-size: 3.5em;
+	color: black;
+}
+
+.modulos-generales ul li a:hover{
+	color: green;
+}
+
+.modulos-generales ul li i{
+	padding:0 5px 0 5px;
+
+}
+
+.modulos-generales ul li i p{
+	font-size: 0.3em;
+	padding: 5px 18px;
+
+	
+}
+
+
+
+/*tablas consultra usuario*/
+table{
+	/*arregla el espaciado entre celdas*/
+	border-collapse: collapse;
+	width: 90%;
+	margin: auto;
+
+}
+
+th{
+	background: black;
+	color: #fff;
+}
+th, td{
+	border: 1px solid gray;
+	text-align: center;
+	padding: 8px;
+	font-size: 0.8em;
+}
+/*colores intercalados por filas*/
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+td .fas:hover{
+	background: rgb(0,0,0,0.5);
+}
+
+.fa-pen-square, .fa-trash-alt{
+	display: inline-block;
+	padding: 9px 0;
+	width: 30px;
+	height: 27px;
+	border-radius: 4px;
+	font-size: 1em;
+	color: #fff;
+
+}
+
+.fa-pen-square{
+	background: green;
+}
+
+.fa-trash-alt{
+	background: red
+}
+
+
+
+/*formulario crear usuario/actualizar usuario*/
+
+
+.alinear-arr{
+	vertical-align: top;
+}
+
+form{
+	width: 95%;
+	margin: auto;
+	background: rgba(0,0,0,0.3);
+	padding: 50px 40px 10px 40px;
+	border-radius: 10px;
+	clear: both;
+}
+
+form label, form input, form select{
+	display: inline-block;
+	margin-top:20px;
+	font-size: 1em;
+}
+
+
+form .form-enca{
+	font-size: 0.8em;
+	border-bottom: 1px solid blue;
+	padding-bottom: 15px;
+}
+
+form .form-cuerpo{
+	padding:20px;
+	border-bottom: 1px solid blue;
+}
+
+form .form-cuerpo label{
+	width: 18%;
+	color: black;
+	padding-left: 20px; 
+}
+
+form .form-cuerpo input, form .form-cuerpo select{
+	width: 30%;
+	color: black;
+}
+
+form .form-pie{
+	text-align: center;
+	padding: 10px 15px;
+
+}
+
+form .form-pie input{
+	font-size: 1em;
+	padding: 5px;
+	color: #fff;
+	border: none;
+}
+
+form .form-pie input[type="reset"]{
+	background: red;
+	cursor: pointer;	
+}
+
+form .form-pie input[type="submit"]{
+	background: green;
+	cursor: pointer;
+}
+
+form .form-pie input[type="button"]{
+	background: green;
+	cursor: pointer;
+}
+
+/*reportes*/
+
+.reporte{
+	width: 90%;
+	margin: auto;
+}
+.reporte img{
+	width: 100%;
+
+}
+
+/*reporte impreso*/
+
+iframe{
+	width: 100%;
+	height: 100vh;
+}

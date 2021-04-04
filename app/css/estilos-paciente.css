@@ -1,0 +1,73 @@
+
+body{
+	background: rgba(245,125,119,0.2);
+}
+
+
+/*navegador*/
+nav {
+	background: #00A4B9;
+}
+.logo{
+	background: #ecececff;
+}
+
+.logo1{
+	background: #ecececff;
+}
+.logo2{
+	background: #ecececff;
+}
+
+
+
+
+/*nivel 0*/
+
+nav .ingreso ul li {
+	background: gray;
+}
+
+
+nav ul li a:hover{
+	background: rgb(0,0,0,0.5);
+}
+
+nav .ingreso ul li a:hover{
+	background: rgb(0,0,0,0.5);
+}
+/*nivel 1*/
+
+
+/*seccion principal*/
+
+
+/*menu*/
+
+
+/*contenedor*/
+
+
+/*panel lateral*/
+aside{
+	background: #00A4B9;
+}
+
+
+/*nivel 0*/
+
+
+aside ul li:hover a{
+	background: rgba(0,0,0,0.5);
+}
+
+/*Area de trabajo*/
+main{
+	background: rgba(236,236,236);
+}
+
+
+/*pie de pagina*/
+footer{
+	background: black;
+}

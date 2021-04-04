@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Consultar Usuarios</title>
+	<link rel="stylesheet" href="../../css/estilos-pagina.css">
+	<link rel="stylesheet" href="../../../css/all.css">
+</head>
+<body>
+	<div class=" contenedor">
+		<!-- seccion fija -->
+		<div class="fija">
+			<!-- migas de pan -->
+			<div class="migas-pan">
+				<a href="..\componentes\admin-principal.html">Principal</a> > Modulos > Administracion-usuarios > consultar-usuarios
+			</div>
+
+			<div class="titulo">
+				<h1>Consultar Usuarios</h1>
+			</div>
+			<div class="controles">
+				<a href="crear-usuario.html" id="control-2">Crear</a>
+				<a href="" id="control-1" onclick="imprimir();">Guardar</a>
+
+			</div>
+		</div>
+		<!-- contenedor -->
+		<div class="cont-pagina">
+			<table>
+				<!-- tr: filas -->
+				<tr>
+					<!-- celdas -->
+					<th>Id</th>
+					<th>Nombres</th>
+					<th>Apellidos</th>
+					<th>Documento</th>
+					<th>Correo</th>
+					<th>Perfil</th>
+					<th>Estado</th>
+					<th>UsernameId</th>
+					<th>Password</th>
+					<th>Acciones</th>
+				</tr>
+
+				<tr>
+					<td>abc1234</td>
+					<td>Santiago</td>
+					<td>Cardenas</td>
+					<td>1000356862</td>
+					<td>santicarsi@gmail.com</td>
+					<td>Admin</td>
+					<td>Activo</td>
+					<td>AdminSanti</td>
+					<td>123456</td>
+					<td>
+						<a href="actualizar-usuario.html"><i class="fas fa-pen-square"></i></a>
+
+						<a href="#" onclick="eliminar_usuario();"><i class="fas fa-trash-alt"></i></a>
+					</td>
+				</tr>
+				<tr>
+					<td>abc1234</td>
+					<td>Santiago</td>
+					<td>Cardenas</td>
+					<td>1000356862</td>
+					<td>santicarsi@gmail.com</td>
+					<td>Admin</td>
+					<td>Activo</td>
+					<td>AdminSanti</td>
+					<td>123456</td>
+					<td>
+						<a href="actualizar-usuario.html"><i class="fas fa-pen-square"></i></a>
+
+						<a href="#"onclick="eliminar_usuario();"><i class="fas fa-trash-alt"></i></a>
+					</td>
+				</tr>
+				<tr>
+					<td>abc1234</td>
+					<td>Santiago</td>
+					<td>Cardenas</td>
+					<td>1000356862</td>
+					<td>santicarsi@gmail.com</td>
+					<td>Admin</td>
+					<td>Activo</td>
+					<td>AdminSanti</td>
+					<td>123456</td>
+					<td>
+						<a href="actualizar-usuario.html"><i class="fas fa-pen-square"></i></a>
+
+						<a href="#" onclick="eliminar_usuario();"><i class="fas fa-trash-alt"></i></a>
+					</td>
+				</tr>
+				<tr>
+					<td>abc1234</td>
+					<td>Santiago</td>
+					<td>Cardenas</td>
+					<td>1000356862</td>
+					<td>santicarsi@gmail.com</td>
+					<td>Admin</td>
+					<td>Activo</td>
+					<td>AdminSanti</td>
+					<td>123456</td>
+					<td>
+						<a href="actualizar-usuario.html"><i class="fas fa-pen-square"></i></a>
+
+						<a href="#" onclick="eliminar_usuario();" ><i class="fas fa-trash-alt"></i></a>
+					</td>
+				</tr>
+			</table>
+
+
+		</div>
+
+		<p></p>
+	</div>
+	<!-- plugin java scrip alertas dirigido a una pagina -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<!-- plugin java scrip alertas instalado -->
+	<script src="../../js/sweetalert.min.js"></script>
+	<!-- java cript -->
+	<script src="../../js/scripts.js"></script>
+</body>
+</html>

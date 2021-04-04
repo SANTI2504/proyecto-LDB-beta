@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Actualizar usuario</title>
+	<link rel="stylesheet" href="../../css/estilos-pagina.css">
+</head>
+<body>
+	<div class=" contenedor">
+		<!-- seccion fija -->
+		<div class="fija">
+			<!-- migas de pan -->
+			<div class="migas-pan">
+				<a href="..\componentes\admin-principal.html">Principal</a> > Modulos > Administracion-usuarios > Consultar-usuarios >  Actualizar-usuarios
+			</div>
+
+			<div class="titulo">
+				<h1>Actualizar Usuarios</h1>
+			</div>
+			<div class="controles">
+				<a href="" id="control-1" onclick="imprimir();">Guardar</a>
+			</div>
+		</div>
+		<!-- contenedor -->
+		<div class="cont-pagina">
+
+
+			<form  action="consultar-usuarios.html" method="">
+				<div class="form-enca">
+					<h1>Datos del usuario</h1>
+				</div>
+				<div class="form-cuerpo">
+					
+					<div>
+						<label for="nombres">Nombres</label>
+						<input name="nombres" id="nombres" type="text" placeholder="Nombres">
+
+						<label for="apellidos">Apellidos</label>
+						<input name="apellidos" id="apellidos" type="text" placeholder="Apellidos">
+
+					</div>
+
+					<div>
+						<label for="tipo-id">Tipo de Id</label>
+						<select name="tipo-id" id="tipo-id">
+							<option value="CC">CC</option>
+							<option value="TI">TI</option>
+						</select>
+
+						<label for="num-id">Numero de Id</label>
+						<input name="num-id" id="num-id" type="number" placeholder="Numero de identificacion">
+					
+					</div>
+
+					<div>
+						<label for="email">Correo Electronico</label>
+						<input name="email" id="email" type="text" placeholder="Correo Electronico">
+
+					</div>
+
+					<div>
+						<label for="telefono">Telefono de Contacto</label>
+						<input name="telefono" id="telefono" type="tel" placeholder="Numero de Celular">
+
+						<label for="telefono-2">Telefono de Contacto 2</label>
+						<input name="telefono-2" id="telefono-2" type="tel" placeholder="Numero de Celular">
+
+					</div>	
+
+					<div>
+						<label for="contraseña">Contraseña</label>
+						<input name="contraseña" id="contraseña" type="password" placeholder="Contraseña">
+
+						<label for="conf-contraseña">Confirmar Contraseña</label>
+						<input name="conf-contraseña" id="conf-contraseña" type="password" placeholder="Confirmar Contraseña">
+
+					</div>
+
+					<div>
+						<label for="fecha-nac">Fecha de Nacimiento</label>
+						<input name="fecha-nac" id="fecha-nac" type="date" placeholder="fecha Nac">
+
+						<label for="fecha-crea">Fecha Creacion de Usuario</label>
+						<input name="fecha-crea" id="fecha-crea" type="date" placeholder="Fecha Creacion de Usuario">
+
+					</div>
+
+					<div>
+						<label for="perfil">Perfil</label>
+						<select name="perfil" id="perfil">
+							<option value="paciente">Paciente</option>
+							<option value="especialista">Especialista</option>
+								<option value="Auxiliar">Auxiliar</option>
+							<option value="admin">Administrador</option>
+						</select>
+
+						<label for="estado">Estado</label>
+						<select name="estado" id="estado">
+							<option value="activo">Activo</option>
+							<option value="inactivo">Inactivo</option>
+						</select>
+					
+					</div>
+
+				</div>
+
+				<div class="form-pie">
+					<input type="reset" value="Cancelar">
+					<input type="button" value="Actualizar Usuario" onclick="actualizar_usuario();">
+				</div>
+			</form>
+		</div>
+
+		<p></p>
+	</div>
+	<!-- plugin java scrip alertas dirigido a una pagina -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<!-- plugin java scrip alertas instalado -->
+	<script src="../../js/sweetalert.min.js"></script>
+	<!-- java cript -->
+	<script src="../../js/scripts.js"></script>
+</body>
+</html>
+

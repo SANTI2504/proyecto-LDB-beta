@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos-panel.css">
+	<link rel="stylesheet" href="css/estilos-admin.css">
+	<link rel="shortcut icon" href="img/logo LDB.png">
+	<link rel="stylesheet" href="../css/all.css">
+	<title>Administrador</title>
+</head>
+<body>
+
+	<div class=" contenedor">
+
+		<!-- navegador -->		
+		<nav >
+			<div class=" logo ">
+				<div class=" logo1">
+					<img src="img/logo LDB.png" alt="">
+				</div>
+				
+				<div class=" logo2">
+					<h1>LDB</h1>
+				</div>
+			</div>
+
+
+			<div class=" navega">
+				<div class=" navega-izq">
+					<p>Bienvenido	</p>
+					<p>Nombre de usuario:</p>
+					<p>Dni:</p>
+				</div>
+				
+
+				<div class=" navega-dere">
+					<ul>
+						<li title="notificaciones"><a href=""><i class="far fa-bell"></i></a></li>
+						<li title="Principal"><a href="modules/componentes/admin-principal.html" target="area-trabajo"><i class="fas fa-house-user"></i></a></li>
+					</ul>
+				</div>	
+	
+			</div>
+			<!-- ingreso y cierre de sesion -->	
+			<div class=" ingreso">
+				
+				<ul>
+					<li><a href="" id="administrador">Administrador</a>
+						<ul>
+							<li><a href="../index.html"><i class="fas fa-sign-in-alt"></i></a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+
+		</nav>	
+
+		<!-- seccion principal -->
+		<section>
+			
+			<!-- menu -->
+			<input type="checkbox" class="checkbox" id="check">
+ 			<label for="check" class="menu"><i class="fas fa-caret-down"></i></label>
+
+
+			<!-- panel lateral -->
+			<aside >
+				<div class=" lateral-sup">
+
+					<ul>
+						<li><a href="modules/componentes/modulos/modulos-administrador.html" target="area-trabajo"><i class="fas fa-bars"><p>Modulos</p></i></a></li>
+					</ul>
+
+				</div>
+				<div class=" lateral-inf">
+					<ul>
+						<li><a href=""><i class="fas fa-user-cog"><p>Ajustes</p></i></a></li>
+					</ul>	
+				</div>
+
+			</aside>
+
+			<!-- area de trabajo -->
+			<main>
+
+				<iframe name="area-trabajo" src="modules/componentes/admin-principal.html"></iframe>
+
+				<!-- <div class="main-opa">
+					<h1>Principal</h1>
+				</div> -->
+			</main>
+
+		</section>
+
+		<!-- pie de pagina -->		
+		<footer>
+			<p>todos los derechos reservados a</p>
+			<p>Logiciel Data Base © CopyRight 2020</p>
+		</footer>
+
+
+	</div>
+	
+</body>
+</html>

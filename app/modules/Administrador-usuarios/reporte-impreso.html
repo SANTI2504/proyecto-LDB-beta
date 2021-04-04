@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reporte-Impreso</title>
+	<link rel="stylesheet" href="../../css/estilos-pagina.css">
+	<link rel="stylesheet" href="../../../css/all.css 	">
+</head>
+<body>
+	<div class=" contenedor">
+		<!-- seccion fija -->
+		<div class="fija">
+			<!-- migas de pan -->
+			<div class="migas-pan">
+				<a href="../../admin-principal.html">Principal</a> > Modulos > Administracion-Usuarios > Reporte-usuarios > Reporte-Impreso
+			</div>
+
+			<div class="titulo">
+				<h1>Reporte impreso</h1>
+			</div>
+			<div class="controles">
+				<a href="../reportes/grafico-prueba.pdf" id="control-1" target="area-reporte" >Grafico</a>
+				<a href="../reportes/tabla-usuarios.pdf" id="control-2" target="area-reporte" >Documento</a>
+			</div>
+		</div>
+		<!-- contenedor -->
+		<div class="cont-pagina">
+			<div class="reporte">
+				<iframe src="../reportes/grafico-prueba.pdf" name="area-reporte" ></iframe>
+			</div>
+			
+		</div>
+	</div>
+
+	<script src="../../js/scripts.js"></script>
+
+</body>
+</html>
