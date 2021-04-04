@@ -430,7 +430,7 @@ form .form_enc{
 	border-bottom: 1px solid black;
 }
 form .form_cuerpo{
-	padding: 15px;	
+	padding: 15px 0;	
 	border-bottom: 1px solid black;
 }
 form .form_cuerpo #nombre, form .form_cuerpo #apellido{
@@ -574,6 +574,7 @@ footer{
 /*tablet*/
 @media only screen and (max-width: 1050px) {
 
+
 	/*navegador*/
 	nav {
 		height: 60px;
@@ -590,7 +591,9 @@ footer{
 
 	.menu{
 		display: inline-block;
-		position: relative;
+		position: absolute;	
+		top: 0%;
+		right: 2%;
 		color: #fff;
 		background: #1ABC9C;
 		border-radius: 5px;
@@ -652,7 +655,7 @@ footer{
 	nav .ingreso{
 		position: absolute;
 		top: 0px;
-		left: 40%;
+		right: 12%;
 		padding-top: 16px;
 	}
 
@@ -708,6 +711,8 @@ footer{
 		height: 150px;
 
 	}	
+
+
 
 
 	/* Nosotros */
@@ -768,13 +773,44 @@ footer{
 /*celular*/
 @media only screen and (max-width: 575.98px) {
 
+	/*especiales*/
+.subtitulo{
+	width: 100%;
+	height: 200px;
+	padding-top: 100px;
+	text-align: center;
+	font-size: 1em;
+
+}
+.subtitulo h2{
+	font-size: 2.5rem;
+}
+
+.titulo {
+		width: 60%;
+		height: 100%;
+		padding: 12px 9px;
+		float: left;
+		font-size: 0.9em;
+	}
+
+	/*nav*/
+	/*ingreso*/
+	nav .ingreso{
+		position: absolute;
+		top: 0px;
+		right: 20%;
+		padding-top: 16px;
+	}
+
+
 	/* Encabezado */
 	header{
 		height: 300px;
 	}
 
 	.head_opa{
-		padding-top: 100px;
+		padding-top: 120px;
 		padding-left: 50%;
 	}
 
@@ -839,15 +875,144 @@ footer{
 		height: auto;
 		border-radius: 5px;
 	}
+	.ser_marc_tit{
 
-	/*NOSOTROS*/
-	.nos_parr{
+	font-size: 0.9em;
 
-		padding: 25px 7%;
+}
+
+	/* Nosotros */
+
+	.nosotros{
+		height: 1450px;
 	}
+	.text_nos{
+		width: 100%;
+		height: 1250px;
+}
+
+	.text_nos i{
+		font-size: 5.5em;
+	}
+
+	/* contactenos */
+/*propiedades de los formularios*/
+/*atributos de seletores(subclases)*/
+
+form label, form input, form textarea{
+	display: inline-block;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-top: 10px;
+	color: solid #2C3E50;
+}
+form .form_enc{
+	color: #fff;
+	text-align: center;
+	font-size: 0.8em;
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+}
+
+form .form_cuerpo #nombre, form .form_cuerpo #apellido{
+	width: 100%;
+
+}
+form .form_cuerpo label{
+	width: 100%;
+	padding-left:0;
+
+}
+form .form_cuerpo input{
+	width: 100%;
+}
+form .form_cuerpo textarea{
+	width: 100%;
+}
+form .form_pie{
+	text-align: center;
+	padding:20px;
+
+
+}
+form .form_pie input{
+	color: rgba(171, 32, 22);	
+	font-size: 1em;
+	width: 100px;	
+	height: 30px;
+
+}
+
+form .form_pie [type="reset"]{
+	background: #0D0D0D;
+	color: rgba(171, 32, 22);
+	cursor: pointer;
+}
+form .form_pie [type="submit"]{
+	background: #0D0D0D;
+	color: #fff;
+	cursor: pointer;
+}
+
+form input:valid{
+	border: 1px solid green;
+}
+form input:invalid{
+	border: 1px solid red;
+}
+
+	/*contact*/
+
+	.contact{
+		width: 100%;
+		height: 1900px;
+	}
+
+	.conte_contact{
+		width: 100%;
+		height: 1700px;
+	}
+	.col_cont{
+
+		width: 100%;
+		height:50%;
+		float: left;
+	}
+
+
+
 
 }
 
 
 
+@media only screen and (max-width: 340px) {
+	
 
+	/*nav*/
+	/*ingreso*/
+	nav .ingreso{
+		position: absolute;
+		top: 135px;
+		right: 0%;
+		padding-top: 16px;
+	}
+
+	nav .ingreso a{
+		padding:6px; 
+		border-radius: 5px;
+	}
+/* Encabezado */
+
+	.head_opa{
+		padding-top: 120px;
+		padding-left: 50%;
+	}
+
+	.head_opa h1{
+		font-size: 1.8em;
+	}
+	.head_opa h2{
+		font-size: 0.8em;
+	}
+}
