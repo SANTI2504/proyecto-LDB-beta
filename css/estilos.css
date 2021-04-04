@@ -464,11 +464,11 @@ form input:invalid{
 .contact{
 	width: 100%;
 	height: 1000px;
-	background: rgba(44, 62, 80, 0.8);
+	background: rgba(26, 188, 156, 0.8);
 }
 
 .contact .subtitulo{
-	color: #fff;
+	color: #2C3E50;
 }
 .conte_contact{
 	width: 100%;
@@ -526,7 +526,7 @@ form input:invalid{
 	font-size: 1em;
 }
 .div_ico_aba_cont a{
-	color: #1ABC9C;
+	color: #2C3E50;
 }
 
 .div_ico_aba_cont a:hover{
